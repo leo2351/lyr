@@ -3,39 +3,19 @@
     "name": "lyr",
     "slug": "lyr",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/images/splash-image.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#030303"
+    "ios": {
+      "bundleIdentifier": "com.lyr.app"
     },
-    "plugins": [
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#030303"
-        }
-      ]
-    ],
+    "android": {
+      "package": "com.lyr.app"
+    },
     "experiments": {
       "typedRoutes": true
     },
-    "sdkVersion": "54.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
     "extra": {
       "eas": {
         "projectId": "6538a19f-ab35-43d3-9bdd-8fa54c85632d"
-      },
-      "router": {}
-    },
-    "androidStatusBar": {
-      "backgroundColor": "#030303"
+      }
     }
   }
 }
