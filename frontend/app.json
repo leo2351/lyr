@@ -1,70 +1,41 @@
 {
   "expo": {
-    "name": "Lyra",
-    "slug": "lyra",
+    "name": "lyr",
+    "slug": "lyr",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "lyrapp",
-    "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.emergent.lyra.app",
-      "infoPlist": {
-        "NSPhotoLibraryUsageDescription": "Share photos in your posts and stories",
-        "NSCameraUsageDescription": "Capture photos and videos for posts",
-        "NSMicrophoneUsageDescription": "Record audio for reels and videos"
-      }
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#030303"
-      },
-      "edgeToEdgeEnabled": true,
-      "package": "com.emergent.lyra.app",
-      "permissions": [
-        "CAMERA",
-        "RECORD_AUDIO",
-        "READ_MEDIA_IMAGES",
-        "READ_MEDIA_VIDEO"
-      ]
-    },
-    "web": {
-      "bundler": "metro",
-      "output": "single",
-      "favicon": "./assets/images/favicon.png"
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash-image.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#030303"
     },
     "plugins": [
-      "expo-router",
-      "expo-video",
-      "expo-localization",
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "Allow Lyra to access your photos to share posts and stories.",
-          "cameraPermission": "Allow Lyra to use your camera to capture photos and videos."
-        }
-      ],
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-image.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
           "backgroundColor": "#030303"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
-  },
-  
+    },
+    "sdkVersion": "54.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "extra": {
-        "eas": {
-              "projectId": "D5mgVhKInvlkcmixeLXNCJfaTx_oOSuntV9oerhT"
-                  }
-                    }
-                  } 
+      "eas": {
+        "projectId": "D5mgVhKInvlkcmixeLXNCJfaTx_o0SuntV9oerhT"
+      },
+      "router": {}
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#030303"
+    }
+  }
+}
