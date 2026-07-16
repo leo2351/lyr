@@ -4,7 +4,10 @@
     "slug": "lyr",
     "version": "1.0.0",
     "ios": {
-      "bundleIdentifier": "com.lyr.app"
+      "bundleIdentifier": "com.lyr.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.lyr.app"
